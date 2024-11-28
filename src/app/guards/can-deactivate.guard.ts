@@ -13,5 +13,5 @@ export const canDeactivateGuard: CanDeactivateFn<CanComponentDeactivate> = (
 ) => {
   console.log("canDeactivateGuard");
 
-  return nextState.url.includes('hello') || confirm('Are you sure you want to leave?');
+  return true;
 };
