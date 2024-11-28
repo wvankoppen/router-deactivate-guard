@@ -8,8 +8,8 @@ import { RouterLink } from '@angular/router';
   template: `
     <nav>
       <a routerLink="/" class="nav-link">Home</a>
-      <a routerLink="/about" class="nav-link">About</a>
-      <a routerLink="/hello/1" class="nav-link">Hello</a>
+      <a routerLink="/hello/1" class="nav-link">Hello 1</a>
+      <a routerLink="/hello/2" class="nav-link">Hello 2</a>
     </nav>
   `,
   styles: [`

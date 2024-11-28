@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideRouter, RouterOutlet } from '@angular/router';
+import {provideRouter, RouterOutlet, withComponentInputBinding} from '@angular/router';
 import { routes } from './app/app.routes';
 import { NavMenuComponent } from './app/layout/nav-menu.component';
 
@@ -18,5 +18,5 @@ export class App {
 }
 
 bootstrapApplication(App, {
-  providers: [provideRouter(routes)]
+  providers: [provideRouter(routes,withComponentInputBinding())]
 });
